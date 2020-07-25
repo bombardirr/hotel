@@ -67,7 +67,40 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src/pug/pages/index.pug')
+      filename: 'cards.html',
+      template: path.resolve(__dirname, 'src/pug/pages/cards.pug')
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'colors-&-type.html',
+      template: path.resolve(__dirname, 'src/pug/pages/colors-&-type.pug')
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'form-elements.html',
+      template: path.resolve(__dirname, 'src/pug/pages/form-elements.pug')
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'headers-&-footers.html',
+      template: path.resolve(__dirname, 'src/pug/pages/headers-&-footers.pug')
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'landing-page.html',
+      template: path.resolve(__dirname, 'src/pug/pages/landing-page.pug')
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'registration.html',
+      template: path.resolve(__dirname, 'src/pug/pages/registration.pug')
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'room-details.html',
+      template: path.resolve(__dirname, 'src/pug/pages/room-details.pug')
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'search-room.html',
+      template: path.resolve(__dirname, 'src/pug/pages/search-room.pug')
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'sign-in.html',
+      template: path.resolve(__dirname, 'src/pug/pages/sign-in.pug')
     }),
   ],
   module: {
@@ -91,7 +124,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
             presets: [
               '@babel/preset-env'

@@ -1,0 +1,11 @@
+include ../utils/mixins.pug
+
+header
+  .header
+    ul.nav
+      +navLinkMany([
+        {link: '#', name: '111'},
+        {link: '#', name: '222'},
+        {link: '#', name: '333'},
+        {link: '#', name: '666'}
+      ])

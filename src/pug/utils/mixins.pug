@@ -1,0 +1,8 @@
+mixin navLink (link, name)
+  li
+    a(href=link).nav-link=name
+
+mixin navLinkMany (arrayWithObjectsParam)
+  for i in arrayWithObjectsParam
+    li
+      a(href=i.link).nav-link=i.name
