@@ -1,5 +1,2 @@
 @import "~normalize.css";
-
-body {
-  background: indianred;
-}
+@import "src/pug/includes/common.blocks/body-container/body-container.scss";

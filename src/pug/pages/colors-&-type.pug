@@ -1,7 +1,7 @@
 extends ../layouts/ui-kit
 block title
   title Colors & type
-block content
-  h1 Jade - node template engine
-  h2 Hello
-  .pew durik
+block body-container
+  include ../includes/common.blocks/body-container/body-container_white.pug
+    block content
+      h1 hello

@@ -1,0 +1,10 @@
+.body-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  &_white {
+    background: #fff;
+  }
+  &_gray {
+    background: #F4F4F6;
+  }
+}
