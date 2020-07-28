@@ -1,0 +1,22 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border: 3px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  opacity: 25%;
+  &__img-container {
+    display: flex;
+    width: 25.41px;
+    height: 14.12px;
+    &__img-item {
+      width: 14.12px;
+      height: 14.12px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
