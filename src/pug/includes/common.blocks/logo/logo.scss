@@ -11,12 +11,25 @@
     display: flex;
     width: 25.41px;
     height: 14.12px;
-    &__img-item {
+  }
+  &__img-item {
+    width: 14.12px;
+    height: 14.12px;
+    img {
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+  &__img-item:first-child {
+    img {
       width: 14.12px;
       height: 14.12px;
-      img {
-        width: 100%;
-      }
+    }
+  }
+  &__img-item:last-child {
+    img {
+      width: 10.94px;
+      height: 7.09px;
     }
   }
 }

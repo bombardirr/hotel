@@ -374,12 +374,21 @@ template {
   width: 25.41px;
   height: 14.12px;
 }
-.logo__img-container__img-item {
+.logo__img-item {
   width: 14.12px;
   height: 14.12px;
 }
-.logo__img-container__img-item img {
+.logo__img-item img {
   width: 100%;
+  vertical-align: top;
+}
+.logo__img-item:first-child img {
+  width: 14.12px;
+  height: 14.12px;
+}
+.logo__img-item:last-child img {
+  width: 10.94px;
+  height: 7.09px;
 }
 
 .body-container {

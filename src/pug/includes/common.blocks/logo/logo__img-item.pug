@@ -1,1 +1,9 @@
-.logo__img-item
+mixin imgItems(...links)
+  each i in links
+    .logo__img-item
+      img(src=i)
+
++imgItems(
+  "./assets/img/logo/img-left.svg",
+  "./assets/img/logo/img-right.svg"
+  )
