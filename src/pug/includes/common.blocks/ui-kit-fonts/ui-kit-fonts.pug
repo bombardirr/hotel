@@ -1,0 +1,10 @@
+mixin paletteItems(elementName, textName)
+  .ui-kit-fonts__item
+    .ui-kit-fonts__item-name=elementName
+    .ui-kit-fonts__item-text= textName
+
+.ui-kit-fonts
+  +paletteItems("H1", "This one is the sub-section or\n" + "  widget title")
+  +paletteItems("H2", "Next one is the item title inside\n" + "  widgets")
+  +paletteItems("H3", "This is a label or CTA text")
+  +paletteItems("Body", "This is the body text which is used for most\n" + "  of the design, like paragraphs, lists, etc.")

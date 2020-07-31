@@ -1,1 +1,16 @@
+mixin paletteItems(elementColor, textName)
+  .palette__item
+    .palette__item-square
+      div(class="palette__item-square_" + elementColor)
+    .palette__item-text
+      .palette__item-text-name=textName
+      .palette__item-text-code=("#" + elementColor)
+
 .palette
+  +paletteItems("1f2041-100", "Dark Shade 100%")
+  +paletteItems("1f2041-75", "Dark Shade 75%")
+  +paletteItems("1f2041-50", "Dark Shade 50%")
+  +paletteItems("1f2041-25", "Dark Shade 25%")
+  +paletteItems("1f2041-5", "Dark Shade 5%")
+  +paletteItems("bc9cff", "Purple")
+  +paletteItems("6fcf97", "Green")

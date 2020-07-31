@@ -1,0 +1,61 @@
+$color_ds: #1f2041;
+$color_purp: #bc9cff;
+$color_gr: #6fcf97;
+
+.palette {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 269.26px;
+  height: 610px;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-text {
+      width: 159px;
+      height: 58px;
+      font-size: 19px;
+      line-height: 29px;
+    }
+    &-text {
+      &-name {
+        font-weight: bold;
+      }
+      &-code {
+        font-weight: normal;
+      }
+    }
+    &-square,
+    &-square > div {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      &_1f2041-100 {
+        background: $color_ds;
+    }
+      &_1f2041-75 {
+        background: $color_ds;
+        opacity: 75%;
+    }
+      &_1f2041-50 {
+        background: $color_ds;
+        opacity: 50%;
+    }
+      &_1f2041-25 {
+        background: $color_ds;
+        opacity: 25%;
+    }
+      &_1f2041-5 {
+        background: $color_ds;
+        opacity: 5%;
+    }
+      &_bc9cff {
+        background: $color_purp;
+    }
+      &_6fcf97 {
+        background: $color_gr;
+    }
+    }
+  }
+}

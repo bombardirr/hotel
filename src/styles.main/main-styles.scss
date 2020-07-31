@@ -1,4 +1,6 @@
 @import "~normalize.css";
-@import "src/pug/includes/common.blocks/body-container/body-container";
-@import "src/pug/includes/common.blocks/logo/logo";
-@import "src/pug/pages/colors-&-type";
+@import "../pug/includes/common.blocks/body-container/body-container";
+@import "../pug/includes/common.blocks/logo/logo";
+@import "../pug/includes/common.blocks/palette/palette";
+@import "../pug/includes/common.blocks/ui-kit-fonts/ui-kit-fonts";
+@import "../pug/pages/colors-&-type";

@@ -351,6 +351,7 @@ template {
 .body-container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 30px 0 0 30px;
 }
 .body-container_white {
   background: #fff;
@@ -391,8 +392,89 @@ template {
   height: 7.09px;
 }
 
+.palette {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 269.26px;
+  height: 610px;
+}
+.palette__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.palette__item-text {
+  width: 159px;
+  height: 58px;
+  font-size: 19px;
+  line-height: 29px;
+}
+.palette__item-text-name {
+  font-weight: bold;
+}
+.palette__item-text-code {
+  font-weight: normal;
+}
+.palette__item-square, .palette__item-square > div {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+.palette__item-square_1f2041-100, .palette__item-square > div_1f2041-100 {
+  background: #1f2041;
+}
+.palette__item-square_1f2041-75, .palette__item-square > div_1f2041-75 {
+  background: #1f2041;
+  opacity: 75%;
+}
+.palette__item-square_1f2041-50, .palette__item-square > div_1f2041-50 {
+  background: #1f2041;
+  opacity: 50%;
+}
+.palette__item-square_1f2041-25, .palette__item-square > div_1f2041-25 {
+  background: #1f2041;
+  opacity: 25%;
+}
+.palette__item-square_1f2041-5, .palette__item-square > div_1f2041-5 {
+  background: #1f2041;
+  opacity: 5%;
+}
+.palette__item-square_bc9cff, .palette__item-square > div_bc9cff {
+  background: #bc9cff;
+}
+.palette__item-square_6fcf97, .palette__item-square > div_6fcf97 {
+  background: #6fcf97;
+}
+
+.ui-kit-fonts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 403px;
+  max-height: 321px;
+}
+.ui-kit-fonts__item {
+  display: flex;
+}
+.ui-kit-fonts__item-name {
+  color: #1f2041;
+  opacity: 25%;
+}
+
 .body-container {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-height: 900px;
+}
+.body-container__sub-container {
+  display: flex;
+  max-width: 1099.26px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 78px 0;
 }
 
 /*# sourceMappingURL=main.css.map*/

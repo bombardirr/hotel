@@ -1,0 +1,16 @@
+$color_ds: #1f2041;
+
+.ui-kit-fonts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 403px;
+  max-height: 321px;
+  &__item {
+    display: flex;
+    &-name {
+      color: $color_ds;
+      opacity: 25%;
+    }
+  }
+}
