@@ -410,11 +410,14 @@ template {
   font-size: 19px;
   line-height: 29px;
 }
+.palette__item-text {
+  font-family: Quicksand, sans-serif;
+}
 .palette__item-text-name {
-  font-weight: bold;
+  font-weight: 700;
 }
 .palette__item-text-code {
-  font-weight: normal;
+  font-weight: 300;
 }
 .palette__item-square, .palette__item-square > div {
   width: 70px;
@@ -457,9 +460,65 @@ template {
 .ui-kit-fonts__item {
   display: flex;
 }
-.ui-kit-fonts__item-name {
+.ui-kit-fonts__item-name_s1 {
+  width: 37px;
   color: #1f2041;
+  text-align: end;
   opacity: 25%;
+  font-family: "Montserrat";
+  margin: 0 30px 0 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+.ui-kit-fonts__item-name_s2 {
+  width: 37px;
+  color: #1f2041;
+  text-align: end;
+  opacity: 25%;
+  font-family: "Montserrat";
+  margin: 0 30px 0 0;
+  font-size: 19px;
+  line-height: 24px;
+}
+.ui-kit-fonts__item-name_s3 {
+  width: 37px;
+  color: #1f2041;
+  text-align: end;
+  opacity: 25%;
+  font-family: "Montserrat";
+  margin: 0 30px 0 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+.ui-kit-fonts__item-name_s4 {
+  width: 37px;
+  color: #1f2041;
+  text-align: end;
+  opacity: 25%;
+  font-family: "Montserrat";
+  margin: 0 30px 0 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.ui-kit-fonts__item-text_s1 {
+  font-size: 24px;
+  line-height: 30px;
+  width: 336px;
+}
+.ui-kit-fonts__item-text_s2 {
+  font-size: 19px;
+  line-height: 24px;
+  width: 282px;
+}
+.ui-kit-fonts__item-text_s3 {
+  font-size: 12px;
+  line-height: 15px;
+  width: 186px;
+}
+.ui-kit-fonts__item-text_s4 {
+  font-size: 14px;
+  line-height: 24px;
+  width: 301px;
 }
 
 .body-container {
@@ -471,10 +530,28 @@ template {
 }
 .body-container__sub-container {
   display: flex;
-  max-width: 1099.26px;
+  width: 1099.26px;
   justify-content: space-between;
   margin: 0 auto;
   padding: 78px 0;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(31d6cfe0d16ae931b73c59d7e0c089c0.ttf);
+  src: url(76f20c55b4aa564ea883173598963b95.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(46e8b3d6aad6545789584deda0e29b75.ttf);
+  src: url(079ca05d3ded9bc107ab8a8da013be22.ttf);
+  src: url(1944c8d1a118759a443517c1337aafdc.ttf);
+  src: url(62a749ca2820713ebbf8785ed33a8893.ttf);
+  src: url(02afb26fe72fcc05298817491c044b7b.ttf);
+  src: url(e2d60bc49517598c0ce8b98f8d4e579f.ttf);
+  src: url(3cd786652b8a2e9d41f210cb1a527ff6.ttf);
+  src: url(fa8441f345d83a0bc4ec345a6948dbb0.ttf);
+  src: url(4a799b111f608dbf4f89064d71292589.ttf);
 }
 
 /*# sourceMappingURL=main.css.map*/

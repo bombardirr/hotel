@@ -1,4 +1,30 @@
-$color_ds: #1f2041;
+$clr_ds: #1f2041;
+$fntQuick: "Quicksand";
+$fntMont: "Montserrat";
+@mixin nameColumn {
+  width: 37px;
+  color: $clr_ds;
+  text-align: end;
+  opacity: 25%;
+  font-family: $fntMont;
+  margin: 0 30px 0 0;
+}
+@mixin fontS1 {
+  font-size: 24px;
+  line-height: 30px;
+}
+@mixin fontS2 {
+  font-size: 19px;
+  line-height: 24px;
+}
+@mixin fontS3 {
+  font-size: 12px;
+  line-height: 15px;
+}
+@mixin fontS4 {
+  font-size: 14px;
+  line-height: 24px;
+}
 
 .ui-kit-fonts {
   display: flex;
@@ -8,9 +34,37 @@ $color_ds: #1f2041;
   max-height: 321px;
   &__item {
     display: flex;
-    &-name {
-      color: $color_ds;
-      opacity: 25%;
+    &-name_s1 {
+      @include nameColumn;
+      @include fontS1;
+    }
+    &-name_s2 {
+      @include nameColumn;
+      @include fontS2;
+    }
+    &-name_s3 {
+      @include nameColumn;
+      @include fontS3;
+    }
+    &-name_s4 {
+      @include nameColumn;
+      @include fontS4;
+    }
+    &-text_s1 {
+      @include fontS1;
+      width: 336px;
+    }
+    &-text_s2 {
+      @include fontS2;
+      width: 282px;
+    }
+    &-text_s3 {
+      @include fontS3;
+      width: 186px;
+    }
+    &-text_s4 {
+      @include fontS4;
+      width: 301px;
     }
   }
 }

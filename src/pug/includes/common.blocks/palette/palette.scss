@@ -1,6 +1,6 @@
-$color_ds: #1f2041;
-$color_purp: #bc9cff;
-$color_gr: #6fcf97;
+$clr_ds: #1f2041;
+$clr_prp: #bc9cff;
+$clr_grn: #6fcf97;
 
 .palette {
   display: flex;
@@ -19,11 +19,12 @@ $color_gr: #6fcf97;
       line-height: 29px;
     }
     &-text {
+      font-family: Quicksand, sans-serif;
       &-name {
-        font-weight: bold;
+        font-weight: 700;
       }
       &-code {
-        font-weight: normal;
+        font-weight: 300;
       }
     }
     &-square,
@@ -32,29 +33,29 @@ $color_gr: #6fcf97;
       height: 70px;
       border-radius: 6px;
       &_1f2041-100 {
-        background: $color_ds;
+        background: $clr_ds;
     }
       &_1f2041-75 {
-        background: $color_ds;
+        background: $clr_ds;
         opacity: 75%;
     }
       &_1f2041-50 {
-        background: $color_ds;
+        background: $clr_ds;
         opacity: 50%;
     }
       &_1f2041-25 {
-        background: $color_ds;
+        background: $clr_ds;
         opacity: 25%;
     }
       &_1f2041-5 {
-        background: $color_ds;
+        background: $clr_ds;
         opacity: 5%;
     }
       &_bc9cff {
-        background: $color_purp;
+        background: $clr_prp;
     }
       &_6fcf97 {
-        background: $color_gr;
+        background: $clr_grn;
     }
     }
   }

@@ -1,16 +1,18 @@
-mixin paletteItems(elementColor, textName)
+- var clrs = {"ds": "1F2041", "prp": "BC9CFF", "grn": "6FCF97"}
+
+mixin paletteItems(elemClrClass, elemClr, txtName)
   .palette__item
     .palette__item-square
-      div(class="palette__item-square_" + elementColor)
+      div(class="palette__item-square_" + elemClrClass)
     .palette__item-text
-      .palette__item-text-name=textName
-      .palette__item-text-code=("#" + elementColor)
+      .palette__item-text-name=txtName
+      .palette__item-text-code=("#" + elemClr)
 
 .palette
-  +paletteItems("1f2041-100", "Dark Shade 100%")
-  +paletteItems("1f2041-75", "Dark Shade 75%")
-  +paletteItems("1f2041-50", "Dark Shade 50%")
-  +paletteItems("1f2041-25", "Dark Shade 25%")
-  +paletteItems("1f2041-5", "Dark Shade 5%")
-  +paletteItems("bc9cff", "Purple")
-  +paletteItems("6fcf97", "Green")
+  +paletteItems("1f2041-100", clrs.ds, "Dark Shade 100%")
+  +paletteItems("1f2041-75", clrs.ds, "Dark Shade 75%")
+  +paletteItems("1f2041-50", clrs.ds, "Dark Shade 50%")
+  +paletteItems("1f2041-25", clrs.ds, "Dark Shade 25%")
+  +paletteItems("1f2041-5", clrs.ds, "Dark Shade 5%")
+  +paletteItems("bc9cff", clrs.prp, "Purple")
+  +paletteItems("6fcf97", clrs.grn, "Green")
